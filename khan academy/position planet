@@ -1,0 +1,24 @@
+#greeting {
+        background: rgb(255, 255, 0);
+        border: 2px solid black;
+        font-family: "Comic Sans MS", fantasy;
+        padding: 5px;
+        width: 262px;
+        position: absolute;   /* positioned inside planet-container */
+        top: 10px;
+        left: 20px;
+        z-index: 2;           /* ensures greeting is above creature */
+    }
+    
+    .planet-container {
+        position: relative;   /* positioning context */
+        display: inline-block;
+    }
+    
+    #creature {
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        width: 100px;
+        z-index: 1;           /* creature stays below greeting */
+}

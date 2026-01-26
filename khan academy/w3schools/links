@@ -1,0 +1,47 @@
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+<!-- A local link (a link to a page within the same website) is specified with a relative URL -->
+ <!-- HTML links are hyperlinks.
+
+You can click on a link and jump to another document.-->
+
+<!-- an unvisited link will be green with no underline.
+  A visited link will be pink with no underline.
+   An active link will be yellow and underlined. 
+   In addition, when mousing over a link (a:hover) it will become red and underlined:  -->
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+<!-- bookmarks can be useful if a web page is very long.
+
+To create a bookmark - first create the bookmark, then add a link to it.-->
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>

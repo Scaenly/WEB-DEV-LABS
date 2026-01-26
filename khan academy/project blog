@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ly's Blog</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Page-wide text settings */
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      margin: 24px;
+      background: #fbfbfb;
+    }
+
+    /* Headings */
+    header h1 {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 2rem;
+      margin: 0 0 8px 0;
+      color: #1b3a4b;
+      font-weight: 700;
+    }
+
+    nav h2 {
+      font-family: "Trebuchet MS", "Arial", sans-serif;
+      font-size: 1.1rem;
+      margin: 18px 0 6px 0;
+      color: #0b5a7a;
+    }
+
+    /* Table of contents */
+    nav ul {
+      padding-left: 1.1rem;
+      margin-top: 0;
+    }
+
+    nav a {
+      color: #0b5a7a;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Blog posts */
+    article {
+      background: #ffffff;
+      border: 1px solid #e6e6e6;
+      padding: 16px;
+      margin: 18px 0;
+      border-radius: 6px;
+    }
+
+    .post-title {
+      font-family: "Georgia", serif;
+      font-size: 1.4rem;
+      margin: 0 0 6px 0;
+      color: #16384a;
+      font-weight: 700;
+    }
+
+    .meta {
+      font-family: "Courier New", monospace;
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    .post-body {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #222;
+    }
+
+    /* Emphasize certain text */
+    .highlight {
+      font-weight: 600;
+      color: #0b5a7a;
+    }
+
+    /* Small print / footer */
+    footer {
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Make internal links stand out inside posts */
+    .back-to-top {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ly's blog</h1>
+    <p>Notes on learning to code, small projects, and things I try.</p>
+  </header>
+
+  <nav aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ul>
+      <li><a href="#post-1">First post — My first small project</a></li>
+      <li><a href="#post-2">Second post — What I learned this week</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="post-1">
+      <h3 class="post-title">First post — My first small project</h3>
+      <div class="meta">Posted on 2026-01-26</div>
+
+      <div class="post-body">
+        <p>Today I finished a tiny web app that displays quotes. It was my first time wiring up HTML, CSS, and a little JavaScript. I practiced structuring the page with <span class="highlight">semantic elements</span> like <code>&lt;article&gt;</code> and <code>&lt;nav&gt;</code>, and I used CSS to make the text readable.</p>
+
+        <p>Key takeaways:</p>
+        <ul>
+          <li>Start small — build a minimal version first.</li>
+          <li>Use clear headings and readable fonts (I used a serif for titles and a system sans-serif for body text).</li>
+          <li>Keep line-height comfortable for long paragraphs.</li>
+        </ul>
+
+        <a class="back-to-top" href="#top">Back to top</a>
+      </div>
+    </article>
+
+    <article id="post-2">
+      <h3 class="post-title">Second post — What I learned this week</h3>
+      <div class="meta">Posted on 2026-01-20</div>
+
+      <div class="post-body">
+        <p>This week I focused on CSS text properties. I experimented with <strong>font-family</strong>, <strong>line-height</strong>, and <strong>font-style</strong> to improve readability. I also learned how to provide fallback fonts like <code>font-family: "Courier New", monospace;</code> for code snippets.</p>
+
+        <p>Example improvements I made:</p>
+        <ol>
+          <li>Increased <em>line-height</em> to 1.6 for body text so paragraphs breathe.</li>
+          <li>Used a monospace font for small code examples to keep alignment consistent.</li>
+          <li>Styled dates with <code>font-style: italic;</code> to visually separate metadata from content.</li>
+        </ol>
+
+        <p>Next steps: add a simple archive page and let readers filter posts by tag.</p>
+
+        <a class="back-to-top" href="#top">Back to top</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>Thanks for reading. This blog is a simple HTML/CSS project — expand it as you learn more!</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: The dinner table</title>
+    </head>
+    <body>
+    
+        <h1>Our dinner menu</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Meal</th>
+                    <th>Ingredients</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spaghetti Bolognese</td>
+                    <td>Pasta, beef, tomato sauce</td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td>Grilled Salmon</td>
+                    <td>Salmon, lemon, herbs</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>Vegetable Stir-fry</td>
+                    <td>Mixed vegetables, soy sauce, rice</td>
+                    <td>$10</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

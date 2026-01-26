@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Links for learning</title>
+    </head>
+    <body>
+        
+        <h1>Links for learning</h1>
+        
+        <ul>
+            <li><a href="https://www.khanacademy.org/math">Learn Math</a></li>
+            <li><a href="https://www.khanacademy.org/science">Explore Science</a></li>
+            <li><a href="https://www.khanacademy.org/computing/computer-programming">Try Coding</a></li>
+        </ul>
+
+        <!-- Heart image turned into a link -->
+        <a href="https://www.khanacademy.org/">
+            <img src="https://www.kasandbox.org/programming-images/cute/Heart.png" alt="Heart icon">
+        </a>
+        
+    </body>
+</html>

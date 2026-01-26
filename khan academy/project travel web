@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spin-off of "Project: Travel webpage"</title>
+    <style>
+      body {
+        font-family: Arial;
+        background-color: #f9f9f9;
+      }
+
+      h1 {
+        color: darkblue;
+      }
+
+      p {
+        color: #333;
+      }
+
+      ul {
+        color: green;
+      }
+
+      .highlight {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Visit Paris 🗼</h1>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" 
+         alt="Eiffel Tower" width="400">
+
+    <p>Paris is famous for its <span class="highlight">Eiffel Tower</span>, delicious food, and beautiful art.</p>
+
+    <h2>Things to See</h2>
+    <ul>
+      <li>Louvre Museum</li>
+      <li>Notre Dame Cathedral</li>
+      <li>Seine River</li>
+    </ul>
+  </body>
+</html>
