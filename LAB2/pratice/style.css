@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin:auto;
+    padding:auto;
+
+}
+:root {
+    --netflix-red: #E50914;
+ --netflix-red-hover: #F40612;
+ --netflix-black: #141414;
+ --netflix-dark: #000000;
+ --text-white: #FFFFFF;
+ --text-gray: #737373;
+ --input-bg: #333333;
+ --input-border: #454545;
+}
+header {
+    background-color : var(--netflix-black);
+    color: var(--text -white);
+    padding : 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: var(--netflix-red);
+    font-weight: lighter;
+    font-size: 10px;
+}
