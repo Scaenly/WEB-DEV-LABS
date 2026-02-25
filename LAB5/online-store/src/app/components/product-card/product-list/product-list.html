@@ -1,0 +1,11 @@
+@if (productList().length === 0) {
+<div class="empty-message">
+    <p>😔 Нет продуктов в этой категории</p>
+</div>
+} @else {
+<div class="product-grid">
+    @for (product of productList(); track product.id) {
+    <app-product-item [product]="product" (deleteProduct)="onDelete($event)" />
+    }
+</div>
+}

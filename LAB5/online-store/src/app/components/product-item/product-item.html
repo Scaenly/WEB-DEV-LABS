@@ -1,0 +1,49 @@
+<div class="product-card" [class.bestseller-card]="product().rating >= 5">
+    @if (product().rating >= 5) {
+    <div class="bestseller-badge">⭐ TOP</div>
+    }
+
+    <!-- Главное изображение -->
+    <img [src]="product().image" [alt]="product().name" class="main-image">
+
+    <!-- Галерея миниатюр -->
+    <div class="thumbnails">
+        @for (img of product().images; track img) {
+        <img class="thumbnail" [src]="img" [alt]="product().name" [class.active]="img === product().image"
+            (click)="setMainImage(img)" />
+        }
+    </div>
+
+    <div class="card-body">
+        <h3 class="product-name">{{ product().name }}</h3>
+        <p class="product-description">{{ product().description }}</p>
+
+        <div class="product-meta">
+            <span class="price">{{ product().price | number }} ₸</span>
+            <span class="rating">⭐ {{ product().rating }}</span>
+        </div>
+
+        <!-- Кнопки действий -->
+        <div class="card-actions">
+            <button class="btn btn-like" (click)="likeProduct()">
+                ❤️ {{ product().likes }}
+            </button>
+
+            <a [href]="product().link" target="_blank" class="btn btn-kaspi">
+                Kaspi →
+            </a>
+        </div>
+
+        <div class="share-actions">
+            <button class="btn btn-whatsapp" (click)="shareWhatsApp()">
+                WhatsApp
+            </button>
+            <button class="btn btn-telegram" (click)="shareTelegram()">
+                Telegram
+            </button>
+            <button class="btn btn-delete" (click)="onDelete()">
+                🗑️
+            </button>
+        </div>
+    </div>
+</div>

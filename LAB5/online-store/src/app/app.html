@@ -1,0 +1,23 @@
+<div class="app-container">
+    <header class="app-header">
+        <h1>🛍️ Online Store</h1>
+        <p class="subtitle">Лучшие товары с Kaspi.kz</p>
+    </header>
+
+    <nav class="categories">
+        @for (category of categories; track category.id) {
+        <button class="category-btn" [class.active]="category.id === selectedCategoryId"
+            (click)="selectCategory(category.id)">
+            {{ category.name }}
+        </button>
+        }
+    </nav>
+
+    @if (selectedCategoryId === null) {
+    <div class="welcome">
+        <p>👆 Выберите категорию для просмотра товаров</p>
+    </div>
+    } @else {
+    <app-product-list [products]="selectedProducts" />
+    }
+</div>
