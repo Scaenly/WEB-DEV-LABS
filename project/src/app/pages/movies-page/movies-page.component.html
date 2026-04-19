@@ -1,0 +1,64 @@
+<section class="hero">
+  <div class="hero-overlay">
+    <p class="hero-label">MOVIEHUB ORIGINALS</p>
+    <h1>Discover movies in a modern streaming style</h1>
+    <p class="hero-text">
+      Search movies, open details, add reviews, save favorites and build your watchlist.
+    </p>
+
+    <div class="hero-actions">
+      <button class="primary-btn" (click)="search()">Explore Now</button>
+      <a class="secondary-btn" routerLink="/watchlist">My Watchlist</a>
+    </div>
+  </div>
+</section>
+
+<section class="filters-box">
+  <h2>Browse Movies</h2>
+
+  <div class="filters">
+    <input [(ngModel)]="searchQuery" placeholder="Search by title">
+
+    <select [(ngModel)]="selectedGenre">
+      <option value="">All genres</option>
+      @for (genre of genres; track genre.id) {
+        <option [value]="genre.id">{{ genre.name }}</option>
+      }
+    </select>
+
+    <input [(ngModel)]="selectedYear" placeholder="Year">
+
+    <button (click)="search()">Search</button>
+  </div>
+
+  @if (errorMessage) {
+    <p class="error">{{ errorMessage }}</p>
+  }
+</section>
+
+<section class="movies-section">
+  <h2>Popular on MovieHub</h2>
+
+  <div class="movie-grid">
+    @for (movie of movies; track movie.id) {
+      <div class="movie-card">
+        <img
+          [src]="movie.poster_url || 'https://via.placeholder.com/300x450?text=MovieHub'"
+          [alt]="movie.title"
+        >
+
+        <div class="movie-info">
+          <h3>{{ movie.title }}</h3>
+          <p class="meta">{{ movie.genre_name }} • {{ movie.release_year }}</p>
+          <p class="rating">Rating: {{ movie.average_score ?? 'No reviews yet' }}</p>
+
+          <div class="card-actions">
+            <a [routerLink]="['/movies', movie.id]" class="details-btn">Details</a>
+            <button (click)="addToWatchlist(movie.id)">+ Watchlist</button>
+            <button (click)="toggleFavorite(movie.id)">♥ Favorite</button>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>

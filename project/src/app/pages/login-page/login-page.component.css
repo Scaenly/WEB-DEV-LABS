@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  min-height: 80vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82)),
+    url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+  margin: 0 -32px;
+  padding: 40px 0;
+}
+
+.login-box {
+  max-width: 420px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 34px;
+  background: rgba(0, 0, 0, 0.78);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.login-box h2 {
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+input, button {
+  padding: 13px 14px;
+  border-radius: 8px;
+  border: none;
+}
+
+input {
+  background: #2b2b33;
+  color: white;
+}
+
+button {
+  background: #e50914;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: #ff7b7b;
+}
